@@ -1,0 +1,50 @@
+[
+  {
+    "bookSourceComment": "酷安 @吉王义昊\n\n搜索时只会搜索合集，加载目录失败很可能是这个合集是空的，无法处理[流汗滑稽]\n\n小说简介和正文都添加了评论，不想看的话可以把书源规则里相关代码删了\n\n默认图片样式是TEXT，这是为了方便看评论里的表情包（\n\n想看漫画的话可以自行更改为FULL\n\n漫画长时间处于加载中或者加载失败很可能是因为原帖中用的图床挂了或者被墙了，无法处理[流汗滑稽]\n\n发现没做一是因为里面各种类型的帖子混在一起，太复杂，二是因为我用不着[受虐滑稽]\n\n！！非常重要：\n使用前需要先登录，登录界面是电脑版网页，可能需要找一下登录按钮在哪[流汗滑稽]\n（不确定现在是不是还有）账号需要通过勇者测试\n点登录没反应可能是ip被ban了或者访问频率过高，着急的话可以换下ip",
+    "bookSourceGroup": "轻小说,需要登录",
+    "bookSourceName": "lk轻之国度",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.lightnovel.us/",
+    "bookUrlPattern": "https://www.lightnovel.us/.+",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "header": "{\n  \"Referer\": \"https://www.lightnovel.us/\"\n}",
+    "lastUpdateTime": 1707406347779,
+    "loginUrl": "https://www.lightnovel.us/",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@js:\nJSON.parse(result).series.author",
+      "coverUrl": "@js:\nJSON.parse(result).series.cover",
+      "init": "@js:\njsContent=src.match(/<script>window.__NUXT__.+?<.script>/gi)[0].replace(/<.?script>/gi,'')\nwindow={}\neval(jsContent)\nJSON.stringify(window.__NUXT__.data[0])",
+      "intro": "@js:\nres=JSON.parse(result).series.intro\nres+=\"\\n上传者：\\n\"\nJSON.parse(result).series.editors.forEach(i=>{\n  res+=`- 昵称：${i.nickname}|签名：${i.sign}|等级：${i.level.level}|${i.level.name}\\n`\n})\nif (JSON.parse(result).comments) {\n  res+=\"\\n评论：\\n\"\n  JSON.parse(result).comments.forEach(i=>{\n    res+=`- ${i.time}|${i.rate}星|${i.user_info.nickname}|${i.user_info.level.name}|${i.text}\\n`\n  })\n}\nres",
+      "kind": "@js:\nres=[\"评分: \"+JSON.parse(result).series.score]\nJSON.parse(result).series.editors.forEach(i=>res.push(i.nickname))\nif (JSON.parse(result).series.name.match(/\\[.+?\\]/gi)) {\n  JSON.parse(result).series.name.match(/\\[.+?\\]/gi).forEach(i=>res.push(i.replace(/[\\[\\]]/gi,'')));\n}\nres",
+      "lastChapter": "@js:\nJSON.parse(result).series.articles[JSON.parse(result).series.articles.length-1].title",
+      "name": "@js:\nJSON.parse(result).series.name.replace(/\\[.+?\\]/gi,'')"
+    },
+    "ruleContent": {
+      "content": "@js:\njsContent=src.match(/<script>window.__NUXT__.+?<.script>/gi)[0].replace(/<.?script>/gi,'')\nwindow={}\neval(jsContent)\nres=window.__NUXT__.data[0].article.content\nif (comments=window.__NUXT__.data[0].comments) {\n  res+=\"\\n【评论】\\n\"\n  comments.list.forEach(i=>{\n    res+=`- ${i.content}\\n`\n  })\n}\nres",
+      "imageStyle": "TEXT"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "@js:\nres=JSON.parse(result).author\nJSON.parse(result).editors.forEach(i=>res+=`  ${i.nickname}`)\nres",
+      "bookList": "@js:\nJSON.parse(result).data.list.map(i=>JSON.stringify(i))",
+      "bookUrl": "@js:\n`https://www.lightnovel.us/cn/series/${JSON.parse(result).sid}`",
+      "checkKeyWord": "最弱的驯养师开启的捡垃圾的旅途",
+      "coverUrl": "@js:\nJSON.parse(result).cover",
+      "intro": "@js:\nres=\"\\n上传者：\\n\"\nJSON.parse(result).editors.forEach(i=>{\n  res+=`- 昵称：${i.nickname}|签名：${i.sign}|等级：${i.level.level}|${i.level.name}\\n`\n})\nres",
+      "kind": "@js:\nres=[JSON.parse(result).group_name]\nif (JSON.parse(result).name.match(/\\[.+?\\]/gi)) {\n  JSON.parse(result).name.match(/\\[.+?\\]/gi).forEach(i=>res.push(i.replace(/[\\[\\]]/gi,'')));\n}\nJSON.parse(result).editors.forEach(i=>res.push(i.nickname))\nres",
+      "name": "@js:\nJSON.parse(result).name.replace(/\\[.+?\\]/gi,'')"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\njsContent=src.match(/<script>window.__NUXT__.+?<.script>/gi)[0].replace(/<.?script>/gi,'')\nwindow={}\neval(jsContent)\nwindow.__NUXT__.data[0].series.articles.map(i=>JSON.stringify(i))",
+      "chapterName": "@js:\nJSON.parse(result).title",
+      "chapterUrl": "@js:\n`https://www.lightnovel.us/cn/detail/${JSON.parse(result).aid}`",
+      "updateTime": "@js:\nJSON.parse(result).time"
+    },
+    "searchUrl": "@js:\nurl='https://www.lightnovel.us/proxy/api/search/search-result';\nbody = {\n    \"is_encrypted\": 0,\n    \"platform\": \"pc\",\n    \"client\": \"web\",\n    \"sign\": \"\",\n    \"gz\": 0,\n    \"d\": {\n        \"q\": \"{{key}}\",\n        \"type\": 2,\n        \"page\": page,\n        \"security_key\": JSON.parse(decodeURIComponent(cookie.getKey(\"https://www.lightnovel.us/\",\"token\"))).security_key\n    }\n}\noption={\"method\":\"POST\",\"body\":JSON.stringify(body)};\noption.headers={ \"Content-Type\": \"application/json; charset=UTF-8\" };\njava.put('url',String(url+','+JSON.stringify(option)))",
+    "weight": 0
+  }
+]
