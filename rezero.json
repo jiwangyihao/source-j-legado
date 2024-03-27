@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceComment": "酷安 @吉王义昊",
+    "bookSourceGroup": "轻小说",
+    "bookSourceName": "rezero",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://re0zero.top",
+    "customOrder": -72,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1711334842230,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "<js>\nr=\"长月达平\"\n</js>",
+      "coverUrl": "@js:\nsource.bookSourceUrl + '/gitbook/res/imgs/article/chapter010/00-a.jpg'",
+      "intro": "<js>\nr=`走出便利商店要回家的高中生 菜月・昴（Natsuki・Subaru） 突然被召唤到异世界。\n\n这莫非就是很流行的异世界召唤！？可是眼前没有召唤者就算了，还遭遇强盗迅速面临性命危机。\n\n这时，一名神秘银发美少女和猫精灵拯救了一筹莫展的他。\n\n以报恩为名义，昴自告奋勇要帮助少女找回失物。\n\n然而，好不容易才掌握到线索，昴和少女却被不明人士攻击而殒命 ── 本来应该是这样，但回过神来，昴却发现自己置身在第一次被召唤到这个异世界时的所在位置。\n\n『死亡回归』 —— 无力的少年得到的唯一能力，是死后时间会倒转回到一开始。\n\n※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※\n\n仅仅是作为没有被赋予任何关于异世界知识、技能、力量的普通人，挣扎求存。 他唯一得到的祝福就是 「重生」 —— 触发条件是痛苦的 『死亡』 ！\n\n他死了多少次？ 历经多少死亡方式（剧透慎点）？ 在不可靠的世界种如何夺取希望之物？\n\n但即使跨越无数血液、尸体和绝望，也要从死亡的命运中拯救少女！`\n</js>",
+      "name": "<js>\njava.get('is')==1?\"Re:从零开始的异世界生活\":''\n</js>"
+    },
+    "ruleContent": {
+      "content": "class.markdown-section@html\n\n<js>\nresult=result.replace(new RegExp('.+anchor-navigation-ex-navbar[\\\\s\\\\S]+\\\\/h1.+','gi'),'')\nresult=result.replace(new RegExp('.+footer[\\\\s\\\\S]+\\\\/footer.+','gi'),'')\njava.log(result)\n</js>",
+      "imageStyle": ""
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "<js>\n\"长月达平\"\n</js>",
+      "bookList": "<js>\nname='Re:从零开始的异世界生活长月达平RE0'\nif (name.match(java.get('key'))) {\n\t   java.put('is',1)\n    r=[\"\"]\n} else {\n\t   java.put('is',0)\n    r=[]\n}\nr\n</js>",
+      "bookUrl": "@js:\nsource.bookSourceUrl + \"/gitbook/book/\"",
+      "checkKeyWord": "Re:从零开始的异世界生活",
+      "coverUrl": "@js:\nsource.bookSourceUrl + '/gitbook/res/imgs/article/chapter010/00-a.jpg'",
+      "intro": "<js>\n`走出便利商店要回家的高中生 菜月・昴（Natsuki・Subaru） 突然被召唤到异世界。\n\n这莫非就是很流行的异世界召唤！？可是眼前没有召唤者就算了，还遭遇强盗迅速面临性命危机。\n\n这时，一名神秘银发美少女和猫精灵拯救了一筹莫展的他。\n\n以报恩为名义，昴自告奋勇要帮助少女找回失物。\n\n然而，好不容易才掌握到线索，昴和少女却被不明人士攻击而殒命 ── 本来应该是这样，但回过神来，昴却发现自己置身在第一次被召唤到这个异世界时的所在位置。\n\n『死亡回归』 —— 无力的少年得到的唯一能力，是死后时间会倒转回到一开始。\n\n※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※\n\n仅仅是作为没有被赋予任何关于异世界知识、技能、力量的普通人，挣扎求存。 他唯一得到的祝福就是 「重生」 —— 触发条件是痛苦的 『死亡』 ！\n\n他死了多少次？ 历经多少死亡方式（剧透慎点）？ 在不可靠的世界种如何夺取希望之物？\n\n但即使跨越无数血液、尸体和绝望，也要从死亡的命运中拯救少女！`\n</js>",
+      "name": "<js>\n\"Re:从零开始的异世界生活\"\n</js>"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapter\n<js>\nres=[]\nresult.forEach(item=>{\n     java.setContent(item);\n     if (java.getString(\"tag.li.0@data-level\").match(new RegExp('^2','gi'))) {\n     \t     res.push(item);\n     \t}\n})\nres\n</js>",
+      "chapterName": "tag.a.0@text",
+      "chapterUrl": "tag.a.0@href",
+      "isVolume": "@js:\njava.getString(\"tag.li.0@data-level\").match(new RegExp('\\\\.','gi')).length<2"
+    },
+    "searchUrl": "https://baidu.com?key={{java.put('key',key)}}",
+    "weight": 0
+  }
+]
