@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceComment": "！！！请务必先登录\n\n！请注意：\n未经许可，请勿在其他平台转载此书源\n\n可能会获得许可的转载方式：整理至「轻小说专用」的书源合集中\n\n不可能获得许可的转载方式：上传至源仓库或整理至「非轻小说专用」的书源合集中\n\n「轻小说专用」的定义：\n有且仅有想看轻小说的人可能会添加\n\n不论何种方式都需先征求书源作者的许可！\n\n2023.10.12\n酷安 @吉王义昊\n源仓库里那个规则已经旧到完全无法导入了（怕不是2.0的）\n大概试了下，原来的那些规则倒是都还能用\n不过还有点bug，而且很多信息不全\n就稍微完善了一下\n- 处理了搜索列表规则，现在不会和详情页混淆\n- 处理了标签的展示形式\n- 完善了详情页规则\n- 目录获取并标识卷名\n- 解决了旧规则的乱码问题\n- 为已下架的书添加了「已下架」标签\n- 完善了发现页\n2023.10.13\n酷安 @吉王义昊\n- 解决了部分书籍无法正常加载的问题\n- 现在已下架的书也可以正常阅读了\n- 解决了已下架的书在发现页无法正常加载的问题\n2023.10.14\n酷安 @吉王义昊\n- 解决了发现页中排行榜获取到的链接不对的问题\n2023.10.22\n酷安 @吉王义昊\n- 现在可以同时搜索作者和书名（但每一页的加载时间都增加至少5秒）\n2023.10.25\n酷安 @吉王义昊\n- 使用 cookie 中的时间计算延迟\n- 现在连续搜索时会自动延迟\n- 添加延迟时提示消息\n2024.2.7\n酷安 @吉王义昊\n- 更换域名（不好意思，之前忘了）",
+    "bookSourceGroup": "轻小说,需要登录",
+    "bookSourceName": "轻小说文库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.wenku8.cc",
+    "concurrentRate": "",
+    "customOrder": -74,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nres=[]\ncontent=java.ajax(source.bookSourceUrl+\"/modules/article/articlelist.php?class=\")\nres.push({title:'分类阅读',url:'',style:{layout_flexGrow:1,layout_flexBasisPercent:1}})\ncontent.match(/分类阅读[\\s\\S]+Tags云集/gi)[0].match(/<a.+<\\/a>/gi).forEach(a=>{\n    res.push({title:a.match(/>.+(?=<)/gi)[0].replace('>',''),url:a.match(/\\\".+(?=\\\")/gi)[0].replace('\"','')+\"&page={{page}}\",style:{layout_flexGrow:1,layout_flexBasisPercent:0.25}})\n})\nres.push({title:'日常系属性Tags',url:'',style:{layout_flexGrow:1,layout_flexBasisPercent:1}})\ncontent.match(/日常系属性Tags[\\s\\S]+幻想系属性Tags/gi)[0].match(/<a.+<\\/a>/gi).forEach(a=>{\n    res.push({title:a.match(/>.+(?=<)/gi)[0].replace('>',''),url:source.bookSourceUrl+'/modules/article/'+a.match(/=.+(?=>.+<)/gi)[0].replace(/^=/i,'')+\"&page={{page}},{'charset': 'gbk'}\",style:{layout_flexGrow:1,layout_flexBasisPercent:0.25}})\n})\nres.push({title:'幻想系属性Tags',url:'',style:{layout_flexGrow:1,layout_flexBasisPercent:1}})\ncontent.match(/幻想系属性Tags[\\s\\S]+黑深残属性Tags/gi)[0].match(/<a.+<\\/a>/gi).forEach(a=>{\n    res.push({title:a.match(/>.+(?=<)/gi)[0].replace('>',''),url:source.bookSourceUrl+'/modules/article/'+a.match(/=.+(?=>.+<)/gi)[0].replace(/^=/i,'')+\"&page={{page}},{'charset': 'gbk'}\",style:{layout_flexGrow:1,layout_flexBasisPercent:0.25}})\n})\nres.push({title:'黑深残属性Tags',url:'',style:{layout_flexGrow:1,layout_flexBasisPercent:1}})\ncontent.match(/黑深残属性Tags[\\s\\S]+人物属性类Tags/gi)[0].match(/<a.+<\\/a>/gi).forEach(a=>{\n    res.push({title:a.match(/>.+(?=<)/gi)[0].replace('>',''),url:source.bookSourceUrl+'/modules/article/'+a.match(/=.+(?=>.+<)/gi)[0].replace(/^=/i,'')+\"&page={{page}},{'charset': 'gbk'}\",style:{layout_flexGrow:1,layout_flexBasisPercent:0.25}})\n})\nres.push({title:'人物属性类Tags',url:'',style:{layout_flexGrow:1,layout_flexBasisPercent:1}})\ncontent.match(/人物属性类Tags[\\s\\S]+特殊属性类Tags/gi)[0].match(/<a.+<\\/a>/gi).forEach(a=>{\n    res.push({title:a.match(/>.+(?=<)/gi)[0].replace('>',''),url:source.bookSourceUrl+'/modules/article/'+a.match(/=.+(?=>.+<)/gi)[0].replace(/^=/i,'')+\"&page={{page}},{'charset': 'gbk'}\",style:{layout_flexGrow:1,layout_flexBasisPercent:0.25}})\n})\nres.push({title:'特殊属性类Tags',url:'',style:{layout_flexGrow:1,layout_flexBasisPercent:1}})\ncontent.match(/特殊属性类Tags[\\s\\S]+排 行 榜/gi)[0].match(/<a.+<\\/a>/gi).forEach(a=>{\n    res.push({title:a.match(/>.+(?=<)/gi)[0].replace('>',''),url:source.bookSourceUrl+'/modules/article/'+a.match(/=.+(?=>.+<)/gi)[0].replace(/^=/i,'')+\"&page={{page}},{'charset': 'gbk'}\",style:{layout_flexGrow:1,layout_flexBasisPercent:0.25}})\n})\nres.push({title:'排行榜',url:'',style:{layout_flexGrow:1,layout_flexBasisPercent:1}})\ncontent.match(/排 行 榜[\\s\\S]+小说搜索/gi)[0].match(/<a[^&\\n]+<\\/a>/gi).forEach(a=>{\n    res.push({title:a.match(/>.+?(?=<)/i)[0].replace('>',''),url:a.match(/\\\".+(?=\\\")/gi)[0].replace('\"','')+\"&page={{page}}\",style:{layout_flexGrow:1,layout_flexBasisPercent:0.25}})\n})\nJSON.stringify(res)",
+    "lastUpdateTime": 1707288015554,
+    "loginCheckJs": "",
+    "loginUrl": "/login.php",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.content@tag.tbody.0@tag.tr.-1@tag.td.1@text##小说作者：",
+      "coverUrl": "id.content@.0@.3@.0@.0@tag.img@src",
+      "intro": "//span[6]",
+      "kind": "id.content@.0@.3@.0@.0@.1@tag.span.0@text##作品Tags：\n@js:\nres=[]\nresult.forEach(item=>{\n    item.split(\" \").forEach(i=>res.push(i))\n})\nres",
+      "lastChapter": "//td[2]/span[4]/a/text()",
+      "name": "id.content@tag.td.0@tag.td.0@tag.b@text",
+      "tocUrl": "text.小说目录@href",
+      "wordCount": "id.content@tag.tbody.0@tag.tr.-1@tag.td.4@text##全文长度："
+    },
+    "ruleContent": {
+      "content": "id.content@html##本文来自.*|最新.*一网打尽！\n@js:\nencode = function(str) {\n\t\t\treturn '&appver=1.13&request=' + java.base64Encode(str) + '&timetoken=' + (new Date().getTime());\n\t\t};\nif (result.match(\"不再提供该小说\")) {\n\t   response=java.post(\n\t   \t    \"http://app.wenku8.com/android.php\",\n\t   \t    encode('action=book&do=text&aid=' + baseUrl.match(/\\/(\\d+)(?=\\/|\\.htm)/gi)[1].replace('/','') + '&cid=' + baseUrl.match(/\\/(\\d+)(?=\\/|\\.htm)/gi)[2].replace('/','') + '&t=0'),\n\t   \t    {\n\t\t\t\t\t       'Content-Type': 'application/x-www-form-urlencoded',\n\t\t\t\t\t       'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.2; unknown Build/NZH54D)'\n        })\n    response.body().replace('<!--image-->http','<img src=\"http').replace('jpg<!--image-->','jpg\">')\n} else {\n\t   result\n}"
+    },
+    "ruleExplore": {
+      "author": "//div[2]/p[1]/text()##/分类.*",
+      "bookList": "//div[@id='content']//td/div",
+      "bookUrl": "//div[2]/b/a/@href",
+      "coverUrl": "img@src",
+      "intro": "//p[4]##.+简介:",
+      "kind": "//p[3]/span/text()&&//p[2]/text()##更新:|字数:\n@js:\nres=[]\nresult.forEach(item=>{\n    item.split(new RegExp(\"[ \\/]\",\"gi\")).forEach(i=>res.push(i))\n})\nres",
+      "name": "//div[2]/b/a/@title"
+    },
+    "ruleSearch": {
+      "author": "//div[2]/p[1]##(.+作者:)|(/分类:.+)",
+      "bookList": "<js>\n//搜索词\njava.toast('书名搜索成功，5s后开始作者搜索')\nwhile(new Date().getTime()-Number(cookie.getKey(source.bookSourceUrl,'jieqiVisitTime').replace('jieqiArticlesearchTime%3D',''))*1000<6000){}\nkey = java.get(\"key\")\npage = java.get(\"page\")\n//拼接搜索作者链接\nurl = `${source.bookSourceUrl}/modules/article/search.php?searchtype=author&searchkey=${key}&page=${page},{\n    \"charset\": \"gbk\"\n}`\ncombineHtml = result + java.ajax(url)\ncombineHtml\n</js>\n@css:#content>table td>div",
+      "bookUrl": "//div[2]/b/a/@href",
+      "checkKeyWord": "无职转生",
+      "coverUrl": "img@src",
+      "intro": "//p[4]##.+简介:",
+      "kind": "//p[3]/span/text()&&//p[2]/text()&&//p[5]/text()##更新:|字数:\n@js:\nres=[]\nresult.forEach(item=>{\n    if (item.match(\"已经下架\")) res.unshift(\"已下架\")\n    else item.split(new RegExp(\"[ \\/]\",\"gi\")).forEach(i=>res.push(i))\n})\n\nres",
+      "name": "//div[2]/b/a/@title",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.css@tag.td",
+      "chapterName": "text",
+      "chapterUrl": "tag.a@href",
+      "isVolume": "<js>java.getString(\"tag.a@text\")==\"\"?true:false</js>"
+    },
+    "searchUrl": "/modules/article/search.php?searchtype=articlename&searchkey={{java.put('key',key)}}&page={{java.put('page',page)}},{\n    \"charset\": \"gbk\"\n}\n@js:\nif(new Date().getTime()-Number(cookie.getKey('http://www.wenku8.net','jieqiVisitTime').replace('jieqiArticlesearchTime%3D',''))*1000<6000){\n  java.toast('搜索频率过高，延迟'+(new Date().getTime()-Number(cookie.getKey(source.bookSourceUrl,'jieqiVisitTime').replace('jieqiArticlesearchTime%3D',''))*1000)/1000+'秒后继续')\n}\n//java.sleep(10)\nwhile(new Date().getTime()-Number(cookie.getKey(source.bookSourceUrl,'jieqiVisitTime').replace('jieqiArticlesearchTime%3D',''))*1000<6000){}\nresult",
+    "weight": 0
+  }
+]
