@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "仅支持网络小说（非文库本）\n\n酷安 @吉王义昊\nGitHub：https://github.com/jiwangyihao/source-j-legado\n\n# 关于许可的额外声明（在线版本参见 GitHub，以在线版本为准）\n\n- 当许可证与本声明冲突时，以本声明为准；\n- 对于本仓库中的任意代码片段：按照 `MPL 2.0` 中有关约定执行；\n- 对于本仓库中的某一完整书源的转载或二次开发，需满足以下全部条件：\n  - 在[本仓库](https://github.com/jiwangyihao/source-j-legado)的 `issue` 中提出请求并具体说明转载地址、二次开发后的书源开源地址以及其他必要信息；\n  - 等待原作者（即本仓库的初始所有者和初始代码贡献者 [@jiwangyihao](https://github.com/jiwangyihao)）查看并通过 `issue` 或依据原作者要求更改转载方式或补充更详细的信息。\n  - 考虑到本项目弃坑的可能，新 `issue` 开启后超过 20 个工作日原作者没有回复或者原作者回复要求更改的 `issue` 在更改后超过 20 个工作日原作者没有回复即视为原作者通过该 `issue`：\n    - 此处的 `issue` 仅包括在[本仓库](https://github.com/jiwangyihao/source-j-legado)开启的，处于「开启状态」的 issue。（也就是说，请不要在已经关闭的 issue 中回复）。\n    - 对于此种方式通过的 issue，转载/二次开发者仍应当遵守本声明中已经写明的相关约定。\n  - 不得上传至源仓库或整理至`非轻小说专用`的书源合集中并应当避免其他人将转载/二次开发版本上传至源仓库或整理至`非轻小说专用`的书源合集中：\n    - 关于轻小说的定义的额外说明：不包括国内的原创网络文学作品（如 `SF 轻小说` 中的原创轻小说以及`起点中文网`中标签包含轻小说的作品）。\n    - 轻小说专用的定义：有且仅有想看轻小说的人可能会添加。\n  - 必须在转载/二次开发地址的明显位置完整包含本声明的全部内容。\n  - 必须保留源注释中原有的更改记录。",
+    "bookSourceGroup": "轻小说,机翻",
+    "bookSourceName": "轻小说机翻🤖",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://books.fishhawk.top/",
+    "customOrder": -76,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "jsLib": "function getConfig() {\n  const { book, source, java } = this\n  const config = {\n  \t  language: \"中日\",\n  \t  translation: \"SGYB\",\n  \t  translationArr: []\n  \t}\n  \tconst languages = [\n  \t  \"日文\",\n    \"中文\",\n    \"中日\",\n    \"日中\"\n  ]\n  const translations = {\n  \t  B: \"baiduParagraphs\",\n  \t  Y: \"youdaoParagraphs\",\n  \t  G: \"gptParagraphs\",\n  \t  S: \"sakuraParagraphs\"\n  \t}\n  \tfunction applyTran(tranStr) {\n  \t  config.translation=tranStr\n  \t  if (tranStr===\"并列\") tranStr=\"SGYB\"\n  \t  let tranArr = []\n  \t  for (let i=0; i<tranStr.length; i++) {\n  \t  \t  tranArr.push(translations[tranStr.charAt(i)])\n  \t  \t}\n  \t  \tconfig.translationArr=tranArr\n  \t}\n  \tfunction applyLanguage(lang) {\n  \t  if (languages.includes(lang))\n  \t  \t  config.language=lang\n  \t}\n  \tapplyTran(config.translation)\n  sVar = String(source.getVariable()).replace(/\\s/gi, '').split('-')\n  if (sVar[0]) applyLanguage(sVar[0])\n  if (sVar[1]) applyTran(sVar[1])\n  bVar = String(book.getVariable(\"custom\")).replace(/\\s/gi, '').split('-')\n  if (bVar[0]) applyLanguage(bVar[0])\n  if (bVar[1]) applyTran(bVar[1])\n  return config\n}",
+    "lastUpdateTime": 1712556744952,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "$.authors.*.name",
+      "init": "@js:\nresult=JSON.parse(result)\nresult.points+=' PT'\nresult.visited+=' 浏览'\nJSON.stringify(result)",
+      "intro": "当前规则：语言展现形式-{{getConfig().language}}，翻译优先级-{{getConfig().translation}}（可在源变量或书籍变量中修改，详情参考变量说明）\n\n{{$.titleJp}}\n总计：{{$.total}} 百度：{{$.baidu}} 有道：{{$.youdao}} GPT：{{$.gpt}} Sakura：{{$.sakura}}\n\n{{$.introductionZh}}\n\n{{$.introductionJp}}",
+      "kind": "$.attentions&&$.type&&$.points&&$.visited&&$.keywords",
+      "lastChapter": "{{$.toc[-1].chapterId}} - {{$.toc[-1].titleZh}}",
+      "name": "$.titleZh",
+      "wordCount": "$.totalCharacters"
+    },
+    "ruleContent": {
+      "content": "@js:\nresult=JSON.parse(result)\nconfig=getConfig()\nresult.paragraphs.map((p, i) => {\n  function generateTran(i) {\n    const chars = {\n  \t    baiduParagraphs: \"ᵇ\",\n  \t    youdaoParagraphs: \"ʸ\",\n  \t    gptParagraphs: \"ᵍ\",\n  \t    sakuraParagraphs: \"ˢ\"\n    }\n    if (config.translation===\"并列\") {\n      return config.translationArr.map(\n        t => result[t] ? (result[t][i]!=\"\" ? chars[t] : \"\") + result[t][i] : \"\"\n      ).join(\"\\n\")\n    } else {\n      for (let tt=0; tt<config.translationArr.length; tt++) {\n        const t=config.translationArr[tt]\n        if (result[t]) return (result[t][i]!=\"\" ? chars[t] : \"\") + result[t][i]\n      }\n    }\n  \t}\n  switch (String(config.language)) {\n  \t  case \"日文\":\n  \t    return p\n  \t  case \"中文\":\n  \t    return generateTran(i)\n  \t  case \"中日\":\n  \t    return [generateTran(i), p].join(\"\\n\")\n  \t  case \"日中\":\n  \t    return [p, generateTran(i)].join(\"\\n\")\n  \t}\n}).join('\\n')"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "bookList": "$.items",
+      "bookUrl": "https://books.fishhawk.top/api/novel/{{$.providerId}}/{{$.novelId}}",
+      "checkKeyWord": "转生第七王子",
+      "intro": "{{$.titleJp}}\n总计：{{$.total}} 百度：{{$.baidu}} 有道：{{$.youdao}} GPT：{{$.gpt}} Sakura：{{$.sakura}}",
+      "kind": "$.attentions&&$.type&&$.keywords",
+      "lastChapter": "@js:\n'{{$.total}} - ' + new Date(parseInt({{$.updateAt}}) * 1000).toJSON().replace(/T|\\.\\d+Z/gi, ' ')",
+      "name": "$.titleZh"
+    },
+    "ruleToc": {
+      "chapterList": "$.toc",
+      "chapterName": "{{$.chapterId}} - {{$.titleZh}}",
+      "chapterUrl": "{{baseUrl}}/chapter/{{$.chapterId}}",
+      "updateTime": "@js:\n'{{$.titleJp}} - ' + new Date(parseInt({{$.createAt}}) * 1000).toJSON().replace(/T|\\.\\d+Z/gi, ' ')"
+    },
+    "searchUrl": "https://books.fishhawk.top/api/novel?page={{page-1}}&pageSize=20&query={{key}}&provider=kakuyomu%2Csyosetu%2Cnovelup%2Chameln%2Cpixiv%2Calphapolis&type=0&level=1&translate=0&sort=0",
+    "variableComment": "设置正文语言展现形式及翻译优先级\n！错误的设置可能导致书源工作不正常\n格式：语言展现形式 - 翻译优先级\n\n语言展现形式：\n- 日文\n- 中文\n- 中日\n- 日中\n翻译优先级：\n- 并列（展示所有存在的翻译）\n- 优先级序列，写在前面的优先采用，B-百度、Y-有道、G-GPT、S-Sakura，如 `SGYB`\n\n示例（默认值）：中日 - SGYB\n示例：中文 - 并列",
+    "weight": 0
+  }
+]
