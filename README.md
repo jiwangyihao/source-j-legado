@@ -81,3 +81,31 @@
 目录只包含Web版（因为文库版实际上只给了下载链接）
 
 插图可正常加载（
+
+## [轻小说机翻机器人](https://github.com/FishHawk/auto-novel)
+
+### 导入地址
+
+- GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json
+- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json
+
+### [其他说明](https://www.coolapk.com/feed/54983229?shareKey=ZjA3OTZiMWVkYzgzNjYxMzkzYTY~&shareUid=1399429&shareFrom=com.coolapk.market_14.1.0)
+
+只做了「网络小说」的部分（也就是没有文库本），因为该网站的文库本提供了epub下载（而且我懒）
+
+发现没做一是因为我懒，二是因为我用不着（[受虐滑稽]
+
+没有封面的原因是该网站的非文库本本来就没有封面[受虐滑稽]
+
+因为是机翻网站，所以在书名、目录、详情等地方都尽可能地保留了日文原文[流汗滑稽]
+
+唯独正文这里出现了问题[笑哭]
+
+阅读只有一种正文格式，也就是说，在阅读里基本不可能做到和源网站相似的对照阅读效果（即原文和译文有明显的格式区分）
+
+在征求了一些酷友的意见以后决定参照源网站的自定义设置，在「源变量」和「书籍变量」中管理自定义设置。
+
+每段翻译左上角的角标表示翻译的来源（B-百度、Y-有道、G-GPT、S-Sakura）
+使用优先级模式时会显示当前小说已有的翻译源中优先级最高的一个，并列模式时会按照默认优先级顺序显示当前小说全部已有翻译源的翻译。
+
+（建议查看酷安原帖，有图片说明）
