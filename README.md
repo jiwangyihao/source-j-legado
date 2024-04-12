@@ -109,3 +109,24 @@
 使用优先级模式时会显示当前小说已有的翻译源中优先级最高的一个，并列模式时会按照默认优先级顺序显示当前小说全部已有翻译源的翻译。
 
 （建议查看酷安原帖，有图片说明）
+
+## 真白萌
+
+### 导入地址
+
+- GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json
+- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json
+
+### [其他说明](https://www.coolapk.com/feed/55088721?shareKey=ODQwNzM4Y2Y3OGE2NjYxOGU3OTk~&shareUid=1399429&shareFrom=com.coolapk.market_14.1.1)
+
+！需要登录
+源站有cf盾和访问频率限制，但登录后触发概率不高，所以没做相关处理，如遇偶发加载失败可以尝试手动点击登录或使用内置浏览器打开当前链接过盾
+建议不开预读或者把预读章节数调到不超过3章，否则会比较容易触发访问限制
+
+目录支持分卷及付费章节标注（如图4）
+支持付费章节的单独付费（如图5）
+发现标签为自动获取（如图6）
+
+部分卷没有章节是正常的，说明该卷下的章节有等级限制，被隐藏了（如图8）
+
+（建议查看酷安原帖，有图片说明）
