@@ -138,3 +138,9 @@
 部分卷没有章节是正常的，说明该卷下的章节有等级限制，被隐藏了（如图8）
 
 （建议查看酷安原帖，有图片说明）
+
+## ✨ Stargazers over time
+
+感谢大家的支持！
+
+[![Stargazers over time](https://starchart.cc/jiwangyihao/source-j-legado.svg?variant=adaptive)](https://starchart.cc/jiwangyihao/source-j-legado)
