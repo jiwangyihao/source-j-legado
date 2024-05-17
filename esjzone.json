@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "建议登录\n\n酷安 @吉王义昊\nGitHub：https://github.com/jiwangyihao/source-j-legado\n\n# 关于许可的额外声明（在线版本参见 GitHub，以在线版本为准）\n\n- 当许可证与本声明冲突时，以本声明为准；\n- 对于本仓库中的任意代码片段：按照 `MPL 2.0` 中有关约定执行；\n- 对于本仓库中的某一完整书源的转载或二次开发，需满足以下全部条件：\n  - 在[本仓库](https://github.com/jiwangyihao/source-j-legado)的 `issue` 中提出请求并具体说明转载地址、二次开发后的书源开源地址以及其他必要信息；\n  - 等待原作者（即本仓库的初始所有者和初始代码贡献者 [@jiwangyihao](https://github.com/jiwangyihao)）查看并通过 `issue` 或依据原作者要求更改转载方式或补充更详细的信息。\n  - 考虑到本项目弃坑的可能，新 `issue` 开启后超过 20 个工作日原作者没有回复或者原作者回复要求更改的 `issue` 在更改后超过 20 个工作日原作者没有回复即视为原作者通过该 `issue`：\n    - 此处的 `issue` 仅包括在[本仓库](https://github.com/jiwangyihao/source-j-legado)开启的，处于「开启状态」的 issue。（也就是说，请不要在已经关闭的 issue 中回复）。\n    - 对于此种方式通过的 issue，转载/二次开发者仍应当遵守本声明中已经写明的相关约定。\n  - 不得上传至源仓库或整理至`非轻小说专用`的书源合集中并应当避免其他人将转载/二次开发版本上传至源仓库或整理至`非轻小说专用`的书源合集中：\n    - 关于轻小说的定义的额外说明：不包括国内的原创网络文学作品（如 `SF 轻小说` 中的原创轻小说以及`起点中文网`中标签包含轻小说的作品）。\n    - 轻小说专用的定义：有且仅有想看轻小说的人可能会添加。\n  - 必须在转载/二次开发地址的明显位置完整包含本声明的全部内容。\n  - 必须保留源注释中原有的更改记录。\n\n原整理修改：GitHub@ZWolken\n原作者：酷安户山香澄Official\n\n2024.5.1\n酷安 @吉王义昊\n更改登录URL\n书源内链接改用相对URL\n更改发现\n更改部分页面显示效果",
+    "bookSourceGroup": "轻小说",
+    "bookSourceName": "ESJ Zone",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.esjzone.me",
+    "bookUrlPattern": "https?://www.esjzone.me/detail/.*",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nresult=[\n  {\n    'title': '>> 个人中心 <<',\n    'url': \"\",\n    'style':{\n      layout_flexGrow:1,\n      layout_flexBasisPercent:1\n    }\n  },\n  {\n    'title': \"我的收藏\",\n    'url': `/my/favorite`,\n    'style':{\n      layout_flexGrow:2,\n      layout_flexBasisPercent:0.25\n    \t}\n  },\n  {\n    'title': \"观看记录\",\n    'url': `/my/view`,\n    'style':{\n      layout_flexGrow:2,\n      layout_flexBasisPercent:0.25\n    \t}\n  }\n]\nhtml=org.jsoup.Jsoup.parse(java.ajax(source.bookSourceUrl+\"/list-01/\"))\ncategorys=html.select(\"#category option\")\nsortings=html.select(\"#sorting option\")\ncategorys.forEach(category => {\n  result.push({\n    'title': '>> ' + java.t2s(category.text()) + ' <<',\n    'url': \"\",\n    'style':{\n      layout_flexGrow:1,\n      layout_flexBasisPercent:1\n    }\n  })\n  sortings.forEach(sorting => {\n    result.push({\n      'title': java.t2s(sorting.text()),\n      'url':`/list-${category.attr('value')}${sorting.attr('value')}/{{page}}.html`,\n      'style':{\n        layout_flexGrow:2,\n        layout_flexBasisPercent:0.25\n      \t}\n    })\n  })\n})\nJSON.stringify(result)",
+    "lastUpdateTime": 1715426081943,
+    "loginUrl": "/my/profile.html",
+    "respondTime": 2438,
+    "ruleBookInfo": {
+      "author": "class.list-unstyled mb-2 book-detail@tag.li.1@tag.a@text\n@js:\njava.t2s(result)",
+      "canReName": "true",
+      "coverUrl": "@css:div.col-md-3 > div > a > img@src",
+      "intro": "{{@@section.m-t-20@a.tag@text##(^|[\\n])##🏷️}}\n{{'&lrm;'}}\n{{@@div.description@html}}\n@js:\njava.t2s(result)",
+      "kind": "关注：{{@css:.book-detail label:has(.icon-eye)@text}},喜欢：{{@css:.book-detail label:has(.icon-heart)@text}}\n{{@@class.list-unstyled mb-2 book-detail@tag.li.-2@text##.+: }}\n{{@@class.list-unstyled mb-2 book-detail@tag.li.-1@text## .+}}",
+      "lastChapter": "@css:div[id = chapterList] >a:last-child@text\n@js:\njava.t2s(result)",
+      "name": "@css:div.col-md-9.book-detail > h2@text\n@js:\njava.t2s(result)",
+      "tocUrl": "",
+      "wordCount": "@css: .book-detail label:has(.icon-file-text)@text##,##"
+    },
+    "ruleContent": {
+      "content": "@css:div.forum-content.mt-3,div[class =d_post_content j_d_post_content]@all\n@js:\njava.t2s(result)"
+    },
+    "ruleExplore": {
+      "author": "",
+      "coverUrl": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "class.card-author@tag.a@text\n@js:\njava.t2s(result)",
+      "bookList": "@css: div.col-xl-9.col-lg-8.p-r-30 > div.row > div || .product-item",
+      "bookUrl": "@css:div> div > div > h5 > a, .product-title > a@href",
+      "coverUrl": "class.main-img@class.lazyload@data-src",
+      "intro": "class.book-ep@div.-1@text\n@js:\njava.t2s(result)",
+      "kind": "{{@css:.column:has(.icon-star-s)@text}},关注：{{@css:.column:has(.icon-eye)@text}},喜欢：{{@css:.column:has(.icon-heart)@text}},羽毛：{{@css:.column:has(.icon-feather)@text}},评论：{{@css:.column:has(.icon-message-square)@text}}##(\\([^()]+)##星$1人\n@js:\n!!result.split(\",\")[0] ? result : java.getString(\"class.book-update@text\")",
+      "lastChapter": "@css:div>div>div[class=card-ep mt-2], .book-ep a@text\n@js:\njava.t2s(result)",
+      "name": "@css: .card-title a, .product-title@text\n@js:\njava.t2s(result)",
+      "wordCount": "@css: .column:has(.icon-file-text)@text##,##"
+    },
+    "ruleToc": {
+      "chapterList": "#chapterList@a[data-title], p.non, summary",
+      "chapterName": "text\n@js:\njava.t2s(result)",
+      "chapterUrl": "href",
+      "isVolume": "p.non@text||summary@text"
+    },
+    "searchUrl": "/tags/{{key}}/{{page}}.html",
+    "weight": 0
+  }
+]
