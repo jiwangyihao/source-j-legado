@@ -1,19 +1,19 @@
 [
   {
-    "bookSourceComment": "酷安 @吉王义昊\nGitHub：https://github.com/jiwangyihao/source-j-legado\n\n# 关于许可的额外声明（在线版本参见 GitHub，以在线版本为准）\n\n- 当许可证与本声明冲突时，以本声明为准；\n- 对于本仓库中的任意代码片段：按照 `MPL 2.0` 中有关约定执行；\n- 对于本仓库中的某一完整书源的转载或二次开发，需满足以下全部条件：\n  - 在[本仓库](https://github.com/jiwangyihao/source-j-legado)的 `issue` 中提出请求并具体说明转载地址、二次开发后的书源开源地址以及其他必要信息；\n  - 等待原作者（即本仓库的初始所有者和初始代码贡献者 [@jiwangyihao](https://github.com/jiwangyihao)）查看并通过 `issue` 或依据原作者要求更改转载方式或补充更详细的信息。\n  - 考虑到本项目弃坑的可能，新 `issue` 开启后超过 20 个工作日原作者没有回复或者原作者回复要求更改的 `issue` 在更改后超过 20 个工作日原作者没有回复即视为原作者通过该 `issue`：\n    - 此处的 `issue` 仅包括在[本仓库](https://github.com/jiwangyihao/source-j-legado)开启的，处于「开启状态」的 issue。（也就是说，请不要在已经关闭的 issue 中回复）。\n    - 对于此种方式通过的 issue，转载/二次开发者仍应当遵守本声明中已经写明的相关约定。\n  - 不得上传至源仓库或整理至`非轻小说专用`的书源合集中并应当避免其他人将转载/二次开发版本上传至源仓库或整理至`非轻小说专用`的书源合集中：\n    - 关于轻小说的定义的额外说明：不包括国内的原创网络文学作品（如 `SF 轻小说` 中的原创轻小说以及`起点中文网`中标签包含轻小说的作品）。\n    - 轻小说专用的定义：有且仅有想看轻小说的人可能会添加。\n  - 必须在转载/二次开发地址的明显位置完整包含本声明的全部内容。\n  - 必须保留源注释中原有的更改记录。",
+    "bookSourceComment": "酷安 @吉王义昊\nGitHub：https://github.com/jiwangyihao/source-j-legado\n\n# 关于许可的额外声明（在线版本参见 GitHub，以在线版本为准）\n\n- 当许可证与本声明冲突时，以本声明为准；\n- 对于本仓库中的任意代码片段：按照 `MPL 2.0` 中有关约定执行；\n- 对于本仓库中的某一完整书源的转载或二次开发，需满足以下全部条件：\n  - 在[本仓库](https://github.com/jiwangyihao/source-j-legado)的 `issue` 中提出请求并具体说明转载地址、二次开发后的书源开源地址以及其他必要信息；\n  - 等待原作者（即本仓库的初始所有者和初始代码贡献者 [@jiwangyihao](https://github.com/jiwangyihao)）查看并通过 `issue` 或依据原作者要求更改转载方式或补充更详细的信息。\n  - 考虑到本项目弃坑的可能，新 `issue` 开启后超过 20 个工作日原作者没有回复或者原作者回复要求更改的 `issue` 在更改后超过 20 个工作日原作者没有回复即视为原作者通过该 `issue`：\n    - 此处的 `issue` 仅包括在[本仓库](https://github.com/jiwangyihao/source-j-legado)开启的，处于「开启状态」的 issue。（也就是说，请不要在已经关闭的 issue 中回复）。\n    - 对于此种方式通过的 issue，转载/二次开发者仍应当遵守本声明中已经写明的相关约定。\n  - 不得上传至源仓库或整理至`非轻小说专用`的书源合集中并应当避免其他人将转载/二次开发版本上传至源仓库或整理至`非轻小说专用`的书源合集中：\n    - 关于轻小说的定义的额外说明：不包括国内的原创网络文学作品（如 `SF 轻小说` 中的原创轻小说以及`起点中文网`中标签包含轻小说的作品）。\n    - 轻小说专用的定义：有且仅有想看轻小说的人可能会添加。\n  - 必须在转载/二次开发地址的明显位置完整包含本声明的全部内容。\n  - 必须保留源注释中原有的更改记录。\n\n2024.5.20\n酷安 @吉王义昊\n处理新版阅读目录加载失败问题",
     "bookSourceGroup": "轻小说",
     "bookSourceName": "真白萌",
     "bookSourceType": 0,
     "bookSourceUrl": "https://masiro.me",
     "bookUrlPattern": "",
-    "customOrder": -1,
+    "customOrder": 6,
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
     "exploreUrl": "@js:\nresult=[\n  {'title':'>> 论坛首页 <<','url':'','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n  {'title':'全部','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&status=1&order=2','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'日轻','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&order=2&ori=0','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'原创','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&order=2&ori=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'最近更新','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&order=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'收藏','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&collection=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}}\n]\nhtml=org.jsoup.Jsoup.parse(java.ajax('https://masiro.me/admin/novels'))\ntagLines=html.select('.nv-tags-box>.tag-line, #tagcks>.tag-line')\ntagLines.forEach(tagLine => {\n  result.push({\n    'title': '>> ' + tagLine.select('.line-tit').text() + ' <<',\n    'url':'',\n    'style':{\n      layout_flexGrow:1,\n      layout_flexBasisPercent:1\n    }\n  })\n  tagLine.select('.ck.tgs').forEach(tag => {\n    result.push({\n      'title':tag.text(),\n      'url':`/admin/loadMoreNovels?page={{page}}&tags=${tag.select('.tag-ck').attr('value')}&order=2`,\n      'style':{\n        layout_flexGrow:2,\n        layout_flexBasisPercent:0.25\n      \t}\n    })\n  })\n})\nJSON.stringify(result)",
     "header": "{\n\"Referer\":\"https://masiro.me/\",\n\"User-Agent\":\"\"\n}",
     "jsLib": "",
-    "lastUpdateTime": 1712906410727,
+    "lastUpdateTime": 1716174832279,
     "loginUrl": "/admin/auth/login",
     "respondTime": 180000,
     "ruleBookInfo": {
@@ -21,11 +21,11 @@
       "canReName": "true",
       "coverUrl": "",
       "init": "@js:\nif (java.getString('class.content@text') == '小孩子不能看') {\n  java.toast(\"等级不足\")\n  time = new Date().getTime()\n  while(new Date().getTime() - time<2000){}\n  throw('等级不足')\n} else\n  src",
-      "intro": "标签：{{@@.tags@tag.a@text##\\s## - }}\n{{@@.brief@html##简介：}}",
+      "intro": "-\n更新时间：{{@@.n-update@class.s-font@text}}\n标签：{{@@.tags@tag.a@text##\\s## - }}\n{{@@.brief@html##简介：}}",
       "kind": "{{@@.n-chapters@text##字数 : .+字}}\n{{@@.n-status@text##状态 : }}\n{{@@.n-translator@text}}\n{{@@.tags@tag.a@text}}",
       "lastChapter": "class.n-update@text##更新 : ",
       "name": "class.novel-title@text",
-      "wordCount": "class.n-chapters@text##字数 : |共.+话"
+      "wordCount": "class.n-chapters@text##字数 : |共.+话|字"
     },
     "ruleContent": {
       "content": "@js:\nif (`{{@@.pay@text}}` == '立即打钱')\n  `<img src=\"/images/打钱.png\" alt=\"打钱.png\">\n  立即打钱\n  Cost：{{@@.cost@value}} 金币`\nelse\n  `{{@@.nvl-content@html}}`",
@@ -52,10 +52,10 @@
       "kind": "{{@@.words@text##字数: .+字}}\n{{@@.translators@text}}\n{{@@.layui-card-footer@text}}\n{{@@.tag@text}}",
       "lastChapter": "class.new_up@text##最新: ",
       "name": "class.layui-card-header@title",
-      "wordCount": "class.words@text##字数: |共.+话"
+      "wordCount": "class.words@text##字数: |共.+话|字"
     },
     "ruleToc": {
-      "chapterList": "@js:\nvolumns=JSON.parse(java.getString('id.f-chapters-json@text'))\nvolumns.forEach(volumn=> {\n  volumn.children=[]\n})\nchapters=JSON.parse(java.getString('id.chapters-json@text'))\nchapters.forEach(chapter=>{\n  volumns.forEach(volumn=> {\n  \t  if (chapter.parent_id===volumn.id)\n  \t    volumn.children.push(chapter)\n  \t})\n})\nresult=[]\nvolumns.forEach(volumn => {\n  result.push(JSON.stringify(volumn))\n  volumn.children.forEach(chapter => {\n    result.push(JSON.stringify(chapter))\n  \t})\n})\njava.log(JSON.stringify(result))\nresult",
+      "chapterList": "@js:\nvolumns=JSON.parse(String(java.getString('id.f-chapters-json@html')).replace(/<.?script[^<>]*>/gi,''))\nvolumns.forEach(volumn=> {\n  volumn.children=[]\n})\nchapters=JSON.parse(String(java.getString('id.chapters-json@html')).replace(/<.?script[^<>]*>/gi,''))\nchapters.forEach(chapter=>{\n  volumns.forEach(volumn=> {\n  \t  if (chapter.parent_id===volumn.id)\n  \t    volumn.children.push(chapter)\n  \t})\n})\nresult=[]\nvolumns.forEach(volumn => {\n  result.push(JSON.stringify(volumn))\n  volumn.children.forEach(chapter => {\n    result.push(JSON.stringify(chapter))\n  \t})\n})\n//java.log(JSON.stringify(result))\nresult",
       "chapterName": "@js:\n$=JSON.parse(result);\n$.title + ($.describe ? `- ${$.describe}` : '')",
       "chapterUrl": "@js:\n$=JSON.parse(result)\n!!$.children ? '' : `/admin/novelReading?cid=${$.id}`",
       "isVip": "@js:\nJSON.parse(result).cost > 0",
