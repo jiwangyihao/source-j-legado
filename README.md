@@ -39,6 +39,17 @@
 
 [阅读 Beta 下载地址](https://beta.miaogongzi.cc/)
 
+## 哔轻类似物
+
+### 导入地址
+
+- GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json
+- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json
+
+### 其他说明
+
+几个像是用哔轻源码搭建的站，无加密，访问速度快一些，但更新比较少。
+
 ## 轻小说文库
 
 ### 导入地址
