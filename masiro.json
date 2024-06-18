@@ -13,7 +13,7 @@
     "exploreUrl": "@js:\nresult=[\n  {'title':'>> 论坛首页 <<','url':'','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n  {'title':'全部','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&status=1&order=2','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'日轻','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&order=2&ori=0','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'原创','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&order=2&ori=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'最近更新','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&order=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'收藏','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&collection=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}}\n]\nhtml=org.jsoup.Jsoup.parse(java.ajax('https://masiro.me/admin/novels'))\ntagLines=html.select('.nv-tags-box>.tag-line, #tagcks>.tag-line')\ntagLines.forEach(tagLine => {\n  result.push({\n    'title': '>> ' + tagLine.select('.line-tit').text() + ' <<',\n    'url':'',\n    'style':{\n      layout_flexGrow:1,\n      layout_flexBasisPercent:1\n    }\n  })\n  tagLine.select('.ck.tgs').forEach(tag => {\n    result.push({\n      'title':tag.text(),\n      'url':`/admin/loadMoreNovels?page={{page}}&tags=${tag.select('.tag-ck').attr('value')}&order=2`,\n      'style':{\n        layout_flexGrow:2,\n        layout_flexBasisPercent:0.25\n      \t}\n    })\n  })\n})\nJSON.stringify(result)",
     "header": "{\n\"Referer\":\"https://masiro.me/\",\n\"User-Agent\":\"\"\n}",
     "jsLib": "",
-    "lastUpdateTime": 1716174832279,
+    "lastUpdateTime": 1718621919484,
     "loginUrl": "/admin/auth/login",
     "respondTime": 180000,
     "ruleBookInfo": {
@@ -44,15 +44,15 @@
       "wordCount": ""
     },
     "ruleSearch": {
-      "author": "class.author@text##作者: ",
-      "bookList": "@js:\njava.setContent(JSON.parse(result).html)\njava.getElements(\"class.layui-card\")",
-      "bookUrl": "tag.a@href",
-      "coverUrl": "class.n-img@lay-src",
-      "intro": "class.hot@text##热度: ",
-      "kind": "{{@@.words@text##字数: .+字}}\n{{@@.translators@text}}\n{{@@.layui-card-footer@text}}\n{{@@.tag@text}}",
-      "lastChapter": "class.new_up@text##最新: ",
-      "name": "class.layui-card-header@title",
-      "wordCount": "class.words@text##字数: |共.+话|字"
+      "author": "$.author",
+      "bookList": "$.novels",
+      "bookUrl": "https://masiro.me/admin/novelView?novel_id={{$.id}}",
+      "coverUrl": "$.cover_img",
+      "intro": "$.brief",
+      "kind": "{{$.hs}}话\n{{$.translators..name}}\nLv{{$.lv_limit}}\n{{$.tags..name}}",
+      "lastChapter": "$.new_up_content",
+      "name": "$.title",
+      "wordCount": "$.words"
     },
     "ruleToc": {
       "chapterList": "@js:\nvolumns=JSON.parse(String(java.getString('id.f-chapters-json@html')).replace(/<.?script[^<>]*>/gi,''))\nvolumns.forEach(volumn=> {\n  volumn.children=[]\n})\nchapters=JSON.parse(String(java.getString('id.chapters-json@html')).replace(/<.?script[^<>]*>/gi,''))\nchapters.forEach(chapter=>{\n  volumns.forEach(volumn=> {\n  \t  if (chapter.parent_id===volumn.id)\n  \t    volumn.children.push(chapter)\n  \t})\n})\nresult=[]\nvolumns.forEach(volumn => {\n  result.push(JSON.stringify(volumn))\n  volumn.children.forEach(chapter => {\n    result.push(JSON.stringify(chapter))\n  \t})\n})\n//java.log(JSON.stringify(result))\nresult",
