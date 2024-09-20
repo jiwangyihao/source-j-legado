@@ -1,6 +1,6 @@
 # 吉的书源集
 
-我为 [Legado](https://github.com/gedoor/legado) 制作的书源集，目前主要是轻小说（可能之后也会有漫画也不一定？）
+我为 [Legado](https://github.com/gedoor/legado) 制作的书源集，目前主要是轻小说，也有漫画（
 
 # 关于许可的额外声明
 
@@ -15,6 +15,7 @@
   - 不得上传至源仓库或整理至`非轻小说专用`的书源合集中并应当避免其他人将转载/二次开发版本上传至源仓库或整理至`非轻小说专用`的书源合集中：
     - 关于轻小说的定义的额外说明：不包括国内的原创网络文学作品（如 `SF 轻小说` 中的原创轻小说以及`起点中文网`中标签包含轻小说的作品）。
     - 轻小说专用的定义：有且仅有想看轻小说的人可能会添加。
+    - 漫画源不适用轻小说专用的限制
   - 必须在转载/二次开发地址的明显位置完整包含本声明的全部内容。
   - 必须保留源注释中原有的更改记录。
 
@@ -199,13 +200,21 @@
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json)
 - [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json)
 
+## 再漫画
+
+### 导入地址
+
+- GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json
+- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json
+
+### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
+
+- [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json)
+
 ### 其他说明
 
-！需要登录，新注册账号需要在指定帖回复后才能获得大多数书的访问权限。
-
-封面/插图加载不出来是正常的，因为ESJ使用了各种乱七八糟的图床（只有很少一部分是直接存储在ESJ的服务器上的），这些图床中的相当多数在国内网络环境接近于不可用。
-
-发现没有标签的原因是ESJ的标签系统和搜索是一体的（搜索的时候会同时搜索小说标题/作者/简介/标签），另外ESJ并没有标签列表。
+随手摸的，发现没做
 
 ## ✨ Stargazers over time
 
