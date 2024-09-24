@@ -33,9 +33,9 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.jso
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.json
 ```
-- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel.json)
+- [jsDelivr](yuedu://booksource/importonline?src=https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel.json)
 ```
-https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel.json
+https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel.json
 ```
 
 ### 其他说明
@@ -62,9 +62,9 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-lik
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json
 ```
-- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel-like.json)
+- [jsDelivr](yuedu://booksource/importonline?src=https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel-like.json)
 ```
-https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel-like.json
+https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel-like.json
 ```
 
 ### 其他说明
@@ -83,9 +83,9 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/wenku.json
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/wenku.json
 ```
-- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/wenku.json)
+- [jsDelivr](yuedu://booksource/importonline?src=https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/wenku.json)
 ```
-https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/wenku.json
+https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/wenku.json
 ```
 
 ### 其他说明
@@ -104,9 +104,9 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/lk-lightnovel
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/lk-lightnovel-us.json
 ```
-- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/lk-lightnovel-us.json)
+- [jsDelivr](yuedu://booksource/importonline?src=https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/lk-lightnovel-us.json)
 ```
-https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/lk-lightnovel-us.json
+https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/lk-lightnovel-us.json
 ```
 
 ### 其他说明
@@ -141,9 +141,9 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/rezero.json
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/rezero.json
 ```
-- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/rezero.json)
+- [jsDelivr](yuedu://booksource/importonline?src=https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/rezero.json)
 ```
-https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/rezero.json
+https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/rezero.json
 ```
 
 ### 其他说明
@@ -165,9 +165,9 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json
 ```
-- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/fishhawk.json)
+- [jsDelivr](yuedu://booksource/importonline?src=https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/fishhawk.json)
 ```
-https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/fishhawk.json
+https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/fishhawk.json
 ```
 
 ### [其他说明](https://www.coolapk.com/feed/54983229?shareKey=ZjA3OTZiMWVkYzgzNjYxMzkzYTY~&shareUid=1399429&shareFrom=com.coolapk.market_14.1.0)
@@ -205,9 +205,9 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json
 ```
-- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/masiro.json)
+- [jsDelivr](yuedu://booksource/importonline?src=https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/masiro.json)
 ```
-https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/masiro.json
+https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/masiro.json
 ```
 
 ### [其他说明](https://www.coolapk.com/feed/55088721?shareKey=ODQwNzM4Y2Y3OGE2NjYxOGU3OTk~&shareUid=1399429&shareFrom=com.coolapk.market_14.1.1)
@@ -236,9 +236,9 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json
 ```
-- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/esjzone.json)
+- [jsDelivr](yuedu://booksource/importonline?src=https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/esjzone.json)
 ```
-https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/esjzone.json
+https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/esjzone.json
 ```
 
 ## 再漫画
@@ -253,9 +253,9 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.jso
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json
 ```
-- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/zaimanhua.json)
+- [jsDelivr](yuedu://booksource/importonline?src=https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/zaimanhua.json)
 ```
-https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/zaimanhua.json
+https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/zaimanhua.json
 ```
 
 ### 其他说明
