@@ -33,6 +33,10 @@ https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.jso
 ```
 https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.json
 ```
+- [jsDelivr](yuedu://booksource/importonline?src=https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel.json)
+```
+https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel.json
+```
 
 ### 其他说明
 
