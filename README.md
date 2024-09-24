@@ -23,7 +23,7 @@
 
 ## 哔哩轻小说
 
-### 导入地址（一键导入请打开 [Github Pages](https://source.jwyihao.top)，需要浏览器支持跳转第三方链接）
+### 导入地址（如需一键导入，请从 [Github Pages](https://source.jwyihao.top) 打开本页面，并且需要浏览器支持跳转第三方链接）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.json)
 ```
@@ -52,7 +52,7 @@ https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel.json
 
 ## 哔轻类似物
 
-### 导入地址（一键导入请打开 [Github Pages](https://source.jwyihao.top)，需要浏览器支持跳转第三方链接）
+### 导入地址（如需一键导入，请从 [Github Pages](https://source.jwyihao.top) 打开本页面，并且需要浏览器支持跳转第三方链接）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json)
 ```
@@ -73,7 +73,7 @@ https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/bilinovel-like.json
 
 ## 轻小说文库
 
-### 导入地址（一键导入请打开 [Github Pages](https://source.jwyihao.top)，需要浏览器支持跳转第三方链接）
+### 导入地址（如需一键导入，请从 [Github Pages](https://source.jwyihao.top) 打开本页面，并且需要浏览器支持跳转第三方链接）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/wenku.json)
 ```
@@ -94,7 +94,7 @@ https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/wenku.json
 
 ## lk轻之国度
 
-### 导入地址（一键导入请打开 [Github Pages](https://source.jwyihao.top)，需要浏览器支持跳转第三方链接）
+### 导入地址（如需一键导入，请从 [Github Pages](https://source.jwyihao.top) 打开本页面，并且需要浏览器支持跳转第三方链接）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/lk-lightnovel-us.json)
 ```
@@ -131,7 +131,7 @@ https://cdn.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/lk-lightnovel-us.js
 
 ## [re0-web](https://github.com/re-zero-khis/re0-web)
 
-### 导入地址（一键导入请打开 [Github Pages](https://source.jwyihao.top)，需要浏览器支持跳转第三方链接）
+### 导入地址（如需一键导入，请从 [Github Pages](https://source.jwyihao.top) 打开本页面，并且需要浏览器支持跳转第三方链接）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/rezero.json)
 ```
