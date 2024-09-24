@@ -26,12 +26,12 @@
 ### 导入地址
 
 - GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.json
-- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.json
+- [GitHub Proxy](https://ghp.ci)（或其他类似代理/镜像）：https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.json
 
 ### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.json)
-- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel.json)
 
 ### 其他说明
 
@@ -50,12 +50,12 @@
 ### 导入地址
 
 - GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json
-- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json
+- [GitHub Proxy](https://ghp.ci)（或其他类似代理/镜像）：https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json
 
 ### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json)
-- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/bilinovel-like.json)
 
 ### 其他说明
 
@@ -66,12 +66,12 @@
 ### 导入地址
 
 - GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/wenku.json
-- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/wenku.json
+- [GitHub Proxy](https://ghp.ci)（或其他类似代理/镜像）：https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/wenku.json
 
 ### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/wenku.json)
-- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/wenku.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/wenku.json)
 
 ### 其他说明
 
@@ -82,12 +82,12 @@
 ### 导入地址
 
 - GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/lk-lightnovel-us.json
-- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/lk-lightnovel-us.json
+- [GitHub Proxy](https://ghp.ci)（或其他类似代理/镜像）：https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/lk-lightnovel-us.json
 
 ### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/lk-lightnovel-us.json)
-- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/lk-lightnovel-us.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/lk-lightnovel-us.json)
 
 ### 其他说明
 
@@ -113,12 +113,12 @@
 ### 导入地址
 
 - GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/rezero.json
-- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/rezero.json
+- [GitHub Proxy](https://ghp.ci)（或其他类似代理/镜像）：https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/rezero.json
 
 ### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/rezero.json)
-- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/rezero.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/rezero.json)
 
 ### 其他说明
 
@@ -132,12 +132,12 @@
 ### 导入地址
 
 - GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json
-- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json
+- [GitHub Proxy](https://ghp.ci)（或其他类似代理/镜像）：https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json
 
 ### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json)
-- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/fishhawk.json)
 
 ### [其他说明](https://www.coolapk.com/feed/54983229?shareKey=ZjA3OTZiMWVkYzgzNjYxMzkzYTY~&shareUid=1399429&shareFrom=com.coolapk.market_14.1.0)
 
@@ -167,12 +167,12 @@
 ### 导入地址
 
 - GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json
-- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json
+- [GitHub Proxy](https://ghp.ci)（或其他类似代理/镜像）：https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json
 
 ### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json)
-- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/masiro.json)
 
 ### [其他说明](https://www.coolapk.com/feed/55088721?shareKey=ODQwNzM4Y2Y3OGE2NjYxOGU3OTk~&shareUid=1399429&shareFrom=com.coolapk.market_14.1.1)
 
@@ -193,24 +193,24 @@
 ### 导入地址
 
 - GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json
-- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json
+- [GitHub Proxy](https://ghp.ci)（或其他类似代理/镜像）：https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json
 
 ### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json)
-- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/esjzone.json)
 
 ## 再漫画
 
 ### 导入地址
 
 - GitHub Raw（可能需要翻墙）：https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json
-- [GitHub Proxy](https://mirror.ghproxy.com)（或其他类似代理/镜像）：https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json
+- [GitHub Proxy](https://ghp.ci)（或其他类似代理/镜像）：https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json
 
 ### 一键导入（需要浏览器支持，请在 [Github Pages 站点](https://source.jwyihao.top)中打开）
 
 - [GitHub Raw（可能需要翻墙）](yuedu://booksource/importonline?src=https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json)
-- [GitHub Proxy](yuedu://booksource/importonline?src=https://mirror.ghproxy.com/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json)
+- [GitHub Proxy](yuedu://booksource/importonline?src=https://ghp.ci/https://raw.githubusercontent.com/jiwangyihao/source-j-legado/main/zaimanhua.json)
 
 ### 其他说明
 
