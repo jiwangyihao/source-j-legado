@@ -1,0 +1,68 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "番茄小说",
+    "bookSourceName": "番茄【FQWeb自建】- 模板",
+    "bookSourceType": 0,
+    "bookSourceUrl": "在此填写你的服务器地址",
+    "customOrder": -41332,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort0=[];//女频\nsort1=[];//男频\npush=(title, url, type1, type2)=>{\n\t\tjson = {\n\t\t\t\ttitle: title,\n\t\t\t\turl: url?url:\"\",\n\t\t\t\tstyle: {\n\t\t\t\t\t\tlayout_flexGrow: 1,\n\t\t\t\t\t\tlayout_flexBasisPercent: type1\n\t\t\t\t\t}\n\t\t\t};\n\t\treturn eval('sort'+type2+'.push(json)');\n\t};\n$$=(gender, tags, status, sort)=>{\n\t\treturn `https://tsearch.toutiaoapi.com/2/wap/search/extra/novel_operator?tab_name=%25E5%2585%25A8%25E9%2583%25A8%25E5%2588%2586%25E7%25B1%25BB&ala_src=novel_tag&gender=${gender}&is_finish=0&iid=2008145514494631&aid=13&app_name=news_article&version_code=692&version_name=6.9.2&abflag=3&partner=novel_tag&passback={{(page-1)*10}}&limit=10&tags=%5B%22${tags}%22%5D&creation_status=${status}&word_num=0&sort=${sort}`\n\t};\n\nstatus=\"ALL\",sort=0;\n[\n\t\t\t\t[\"女\",[[\"无敌\",384],[\"种田\",23],[\"萌宝\",28],[\"美食\",78],[\"游戏动漫\",57],[\"娱乐圈\",43],[\"直播\",69],[\"女扮男装\",388],[\"二次元\",39],[\"团宠\",94],[\"无cp\",392],[\"青梅竹马\",387],[\"病娇\",380],[\"科幻\",8],[\"武侠\",16],[\"年代\",79],[\"重生\",36],[\"灵异\",100],[\"公主\",83],[\"甜宠\",96],[\"盗墓\",81],[\"系统\",19],[\"女强\",86],[\"皇后\",84],[\"推理\",61],[\"文化历史\",62],[\"生活\",48],[\"反派\",369],[\"末世\",68],[\"悬疑\",10],[\"穿越\",37],[\"学霸\",82],[\"扮猪吃虎\",93],[\"清穿\",76],[\"穿书\",382],[\"快穿\",24],[\"皇叔\",87],[\"空间\",44],[\"宠妻\",30],[\"豪门总裁\",29],[\"影视小说\",45],[\"成功励志\",56],[\"职场\",127],[\"民国\",390],[\"都市生活\",2],[\"腹黑\",92],[\"星际\",77],[\"天才\",90],[\"古代言情\",5],[\"家庭\",125],[\"兽世\",72],[\"校园\",4],[\"诗歌散文\",46],[\"虐文\",95],[\"嫡女\",88],[\"王妃\",85],[\"精灵\",89],[\"幻想言情\",32],[\"现代言情\",3],[\"现言甜宠\",395],[\"现言脑洞\",267],[\"先婚后爱\",265],[\"都市日常\",261],[\"古言脑洞\",253],[\"古言萌宝\",249],[\"古言甜宠\",394],[\"现言日常\",269],[\"现言复仇\",268],[\"玄幻言情\",248],[\"医术\",247],[\"马甲\",266]]],\n\t\t[\"男\",[[\"玄幻\",7],[\"神豪\",20],[\"鉴宝\",17],[\"三国\",67],[\"二次元\",39],[\"历史\",12],[\"美食\",78],[\"奶爸\",42],[\"娱乐圈\",43],[\"洪荒\",66],[\"大唐\",73],[\"外卖\",75],[\"末世\",68],[\"都市\",1],[\"宠物\",74],[\"学霸\",82],[\"游戏动漫\",57],[\"科幻\",8],[\"体育\",15],[\"直播\",69],[\"年代\",79],[\"文化历史\",62],[\"诸天万界\",71],[\"海岛\",40],[\"神医\",26],[\"明朝\",126],[\"武侠\",16],[\"灵异\",100],[\"星际\",77],[\"穿越\",37],[\"剑道\",80],[\"都市修真\",124],[\"赘婿\",25],[\"盗墓\",81],[\"推理\",61],[\"无限流\",70],[\"种田\",23],[\"战争\",97],[\"天才\",90],[\"职场\",127],[\"悬疑\",10],[\"成功励志\",56],[\"重生\",36],[\"系统\",19],[\"空间\",44],[\"腹黑\",92],[\"诗歌散文\",46],[\"家庭\",125],[\"影视小说\",45],[\"生活\",48],[\"都市生活\",2],[\"扮猪吃虎\",93],[\"大秦\",377],[\"无敌\",384],[\"漫威\",374],[\"火影\",368],[\"西游\",373],[\"龙珠\",376],[\"聊天群\",381],[\"海贼\",370],[\"奥特同人\",367],[\"特种兵\",375],[\"反派\",369],[\"校花\",385],[\"女帝\",378],[\"单女主\",389],[\"神奇宝贝\",371],[\"九叔\",383],[\"求生\",379],[\"无女主\",391],[\"武魂\",386],[\"网游\",372],[\"战神\",27],[\"都市脑洞\",262],[\"都市种田\",263],[\"都市日常\",261],[\"历史脑洞\",272],[\"玄幻脑洞\",257],[\"奇幻仙侠\",259],[\"都市青春\",396],[\"传统玄幻\",258],[\"历史古代\",273]]]\n\t].map(([title,list], gender)=>{\n\t\tpush('༺ˇ»`ʚ'+title+'生频道ɞ´«ˇ༻',null,1,gender);\n\t\tlist.map([title,tags]=>{\n\t\t\t\tpush('༺ '+title+' ༻',(gender, tags, status, sort), 1,gender);\n\t\t\t\t[\"推荐\",\"评分\",\"热门\"].map((title,sort)=>{\n\t\t\t\t\t\t[ [\"[\"+title+\"]\",\"ALL\"],[\"完结\",\"Finished\"],[\"连载\",\"Loading\"] ].map([title,status]=>{\n\t\t\t\t\t\t\t\treturn push(title, $$(gender, tags, status, sort), 0.25,gender);\n\t\t\t\t\t\t\t});\n\t\t\t\t\t});\n\t\t\t});\n\t});\nJSON.stringify(\n\tsort1\n\t//.concat(sort0) //是否显示女频\n);",
+    "header": "{\"User-Agent\":\"com.dragon.read/306 (Linux; U; Android 8.1.0; zh_CN; MI PAD 4; Build/OPM1.171019.019; Cronet/TTNetVersion:4df3ca9d 2019-11-25)\",\"accept\":\"application/json; charset=utf-8\",\"sdk-version\":\"1\"}",
+    "lastUpdateTime": 1730289519547,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "$.author##<em>|</em>",
+      "canReName": "",
+      "coverUrl": "$.thumb_url",
+      "init": "$.data[0]",
+      "intro": "🏷️ 标签：{{$.tags}}{{'\\n&lrm;\\n'}}\n \n &nbsp;\n \n\n 📉开书时间：{{$.create_time##T.*}}{{'\\n&lrm;\\n'}}\n  📈更新时间：{{java.timeFormat(java.getString('$..last_chapter_update_time')*1000)}}{{'\\n&lrm;\\n'}}\n  👥 主角：{{$.roles##\\[|\\\"|\\]}}\n{{'\\n&lrm;\\n'}}\n💠 原名：{{$.original_book_name}}{{'\\n&lrm;\\n'}}\n🔋 别名：{{$.book_flight_alias_name}}  \n\n{{'\\n&lrm;\\n'}}📮 简介：{{$..abstract}}{{'\\n'+'​'}}\n📍 {{$.copyright_info##，.*##。}}\n@js:result.replace(/.+：(人在读)?\\s/g,'')",
+      "kind": "{{$..category}},连载{{$..creation_status}}完结,{{$..score}}分,{{$..create_time##T.*}}@js:result.replace(/连载0完结/g,'完结').replace(/连载1完结/g,'连载').replace(/连载4完结/g,'已断更').replace(/连载-1完结/g,'完结')",
+      "lastChapter": "{{$.last_chapter_title}} • {{java.timeFormat(java.getString('$.last_chapter_update_time')*1000)}}",
+      "name": "$.book_name",
+      "tocUrl": "https://fanqienovel.com/api/reader/directory/detail?bookId={{$..book_id}}",
+      "wordCount": "$.word_number"
+    },
+    "ruleContent": {
+      "content": "$..content",
+      "replaceRegex": "##.*本节目由.*|.*出品.*",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "$.author",
+      "bookList": "$[0].content[*]",
+      "bookUrl": "https://api5-normal-lf.fqnovel.com/reading/bookapi/multi-detail/v/?book_type=0&from=2&book_id={{$.book_id}}&get_related_audio_infos=0&iid=3626627309538941&device_id=62070595540&ac=wifi&mac_address=7C%3A03%3AAB%3A73%3A27%3A7E&channel=novel_xiaomi2020_306_yz1&aid=1967&app_name=novelapp&version_code=306&version_name=3.0.6.17&device_platform=android&ssmix=a&device_type=MI+PAD+4&device_brand=Xiaomi&language=zh&os_api=27&os_version=8.1.0",
+      "coverUrl": "$.thumb_url",
+      "intro": "$.abstract",
+      "kind": "{{$.source}}\n{{$.category}}\n{{$.complete_category}}\n{{$.tags}}",
+      "lastChapter": "",
+      "name": "$.book_name",
+      "wordCount": "$..word_number"
+    },
+    "ruleSearch": {
+      "author": "$.author##<em>|</em>",
+      "bookList": "$.data.ret_data.*||$..book_data[*]||$..book_info[*]",
+      "bookUrl": "https://api5-normal-sinfonlineb.fqnovel.com/reading/bookapi/multi-detail/v/?aid=1967&iid=1&version_code=999&book_id={{java.get(\"book_id\")}}",
+      "checkKeyWord": "转生三无猫娘，成神的我只想摸鱼",
+      "coverUrl": "$.thumb_url",
+      "intro": "$.abstract",
+      "kind": "$.category&&$.tags",
+      "lastChapter": "",
+      "name": "$.book_name||$.title\n<js>\njava.put(\"book_id\", java.getString(\"$.book_id\"))\nresult\n</js>\n##<em>|</em>|《|》",
+      "wordCount": "连载{{$.creation_status}}完本##连载0|1完本"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\n  let defaultVariable = {\n    \"volume\": {\n      \"status\": false,\n      \"mode\": 1,\n      \"spacer\": \" | \",\n      \"emptyVolumeName\": {\n        \"action\": false,\n        \"replace\": \"第一卷：默认\"\n      },\n      \"onlyOneShow\": false\n    }\n  }\n  let variable = (book.getVariable(\"custom\") != \"\" && book.getVariable(\"custom\") != null) ? book.getVariable(\"custom\") : source.getVariable();\n  if(variable != \"\" && variable != null){\n    try{\n      variable = JSON.parse(variable);\n    } catch(err) {\n      java.log(err);\n      variable = defaultVariable;\n    }\n  } else {\n    variable = defaultVariable;\n  }\n  let data = JSON.parse(result).data;\n  let list = data.chapterListWithVolume;\n  let volume = data.volumeNameList;\n  let chapters = [];\n  let volume_names = [];\n  for(let i in list){\n    for(let x in list[i]){\n      let c = list[i][x];\n      if(variable.volume.status == true && variable.volume.mode == 1 && volume_names.indexOf(c.volume_name) == -1){\n        volume_names.push(c.volume_name);\n        if(volume.length != 1 || variable.volume.onlyOneShow){\n          chapters.push({\n            title: ((c.volume_name == \"\" && variable.volume.emptyVolumeName.action == \"replace\" && variable.volume.emptyVolumeName.replace) ? variable.volume.emptyVolumeName.replace : c.volume_name),\n            isVolume: true\n          });\n        }\n      }\n      if(variable.volume.status == true && variable.volume.mode == 2){\n        if(c.volume_name == \"\" && variable.volume.emptyVolumeName.action == \"replace\" && variable.volume.emptyVolumeName.replace){\n          c.title = (c.volume_name == \"\" ? variable.volume.emptyVolumeName.replace : c.volume_name) + (variable.volume.spacer || \" | \") + c.title;\n        } else if(volume.length != 1 || variable.volume.onlyOneShow){\n          c.title = c.volume_name + (variable.volume.spacer || \" | \") + c.title;\n        }\n      }\n      c.url  = source.bookSourceUrl +  `/content?item_id=${c.itemId}`;\n      chapters.push(JSON.stringify(c));\n    }\n  }\n  chapters\n</js>",
+      "chapterName": "$.title<js>##正文卷.|正文.|VIP章节.|免费章节.|VIP卷.|默认卷.|章节目录.|最新章节.|[\\(（【].*?[求更谢乐发订/万架字票合补加].*?[】）\\)]</js>",
+      "chapterUrl": "$.url",
+      "isVip": "",
+      "isVolume": "$.isVolume",
+      "updateTime": "$.info"
+    },
+    "searchUrl": "/search?query={{key}}",
+    "weight": 0
+  }
+]
