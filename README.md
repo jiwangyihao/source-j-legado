@@ -1,5 +1,8 @@
 # 吉的书源集
 
+![GitHub License](https://img.shields.io/github/license/jiwangyihao/source-j-legado)
+![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/jiwangyihao/source-j-legado)
+
 我为 [Legado](https://github.com/gedoor/legado) 制作的书源集，目前主要是轻小说，也有漫画（
 
 # 关于许可的额外声明
