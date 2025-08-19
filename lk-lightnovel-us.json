@@ -4,15 +4,15 @@
     "bookSourceGroup": "轻小说,需要登录",
     "bookSourceName": "lk轻之国度",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.lightnovel.us/",
-    "bookUrlPattern": "",
+    "bookSourceUrl": "https://www.lightnovel.fun/",
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": true,
-    "enabledExplore": false,
-    "header": "{\n  \"Referer\": \"https://www.lightnovel.us/\"\n}",
-    "lastUpdateTime": 1712535538917,
-    "loginUrl": "https://www.lightnovel.us/",
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nvar result = [];\nvar BaseUrl = \"https://www.lightnovel.fun\";\nvar baseBody = {\n    \"is_encrypted\": 0,\n    \"platform\": \"pc\",\n    \"client\": \"web\",\n    \"sign\": \"\",\n    \"gz\": 0,\n    \"d\": {\n        \"parent_gid\": 3,\n        \"security_key\": JSON.parse(decodeURIComponent(cookie.getKey(BaseUrl, \"token\"))).security_key\n    }\n};\nvar headers = {\n    \"Content-Type\": \"application/json\",\n    \"Cookie\": cookie.getCookie(BaseUrl)\n};\n[\n    [\"轻小说\", 3],\n    [\"漫画\", 33]\n].forEach(([tag, id]) => {\n    result.push({\n        title: tag,\n        url: null,\n        style: {\n            layout_flexGrow: 1,\n            layout_flexBasisPercent: 1\n        }\n    });\n    baseBody.d.parent_gid = id;\n    let sorts = java.post(BaseUrl + \"/proxy/api/category/get-categories\", JSON.stringify(baseBody), headers).body();\n    JSON.parse(sorts).data.forEach(sort => {\n        let url = BaseUrl + \"/proxy/api/category/get-article-by-cate,\";\n        baseBody.d.gid = sort.gid\n        baseBody.d.page = \"{{page}}\";\n        url += JSON.stringify({\n            \"body\": JSON.stringify(baseBody),\n            \"headers\": headers,\n            \"method\": \"POST\"\n        });\n        result.push({\n            title: sort.name,\n            url: url,\n            style: {\n                layout_flexGrow: 1,\n                layout_flexBasisPercent: tag === \"漫画\" ? 0.2 : 0.25\n            }\n        });\n    })\n});\nJSON.stringify(result);",
+    "header": "{\n  \"Referer\": \"https://www.lightnovel.fun/\"\n}",
+    "lastUpdateTime": 1755423695806,
+    "loginUrl": "https://www.lightnovel.fun/",
     "respondTime": 180000,
     "ruleBookInfo": {
       "author": "$.series.author",
@@ -27,11 +27,18 @@
       "content": "@js:\njsContent=src.match(/<script>window.__NUXT__.+?<.script>/gi)[0].replace(/<.?script>/gi,'')\nwindow={}\neval(jsContent)\nres=window.__NUXT__.data[0].article.content\nif (comments=window.__NUXT__.data[0].comments) {\n  res+=\"\\n【评论】\\n\"\n  comments.list.forEach(i=>{\n    res+=`- ${i.content}\\n`\n  })\n}\nres",
       "imageStyle": "TEXT"
     },
-    "ruleExplore": {},
+    "ruleExplore": {
+      "author": "$.author",
+      "bookList": "<js>\nvar bookList = JSON.parse(src).data.list.filter(item => item.sid !== 0 && item.sid !==5);\nJSON.stringify(bookList);\n</js>\n$[*]",
+      "bookUrl": "https://www.lightnovel.fun/cn/series/{{$.sid}}",
+      "coverUrl": "$.cover",
+      "kind": "$.last_time",
+      "name": "$.title"
+    },
     "ruleSearch": {
       "author": "$.author&&$.editors.*.nickname",
       "bookList": "$.data.list",
-      "bookUrl": "https://www.lightnovel.us/cn/series/{{$.sid}}",
+      "bookUrl": "https://www.lightnovel.fun/cn/series/{{$.sid}}",
       "checkKeyWord": "最弱的驯养师开启的捡垃圾的旅途",
       "coverUrl": "$.cover",
       "intro": "@js:\nres=\"\\n上传者：\\n\"\nresult.editors.forEach(i=>{\n  res+=`- 昵称：${i.nickname}|签名：${i.sign}|等级：${i.level.level}|${i.level.name}\\n`\n})\nres",
@@ -41,10 +48,10 @@
     "ruleToc": {
       "chapterList": "@js:\njsContent=src.match(/<script>window.__NUXT__.+?<.script>/gi)[0].replace(/<.?script>/gi,'')\nwindow={}\neval(jsContent)\nwindow.__NUXT__.data[0].series.articles.map(i=>JSON.stringify(i))",
       "chapterName": "$.title",
-      "chapterUrl": "https://www.lightnovel.us/cn/detail/{{$.aid}}",
+      "chapterUrl": "https://www.lightnovel.fun/cn/detail/{{$.aid}}",
       "updateTime": "$.time"
     },
-    "searchUrl": "@js:\nurl='https://www.lightnovel.us/proxy/api/search/search-result';\nbody = {\n    \"is_encrypted\": 0,\n    \"platform\": \"pc\",\n    \"client\": \"web\",\n    \"sign\": \"\",\n    \"gz\": 0,\n    \"d\": {\n        \"q\": \"{{key}}\",\n        \"type\": 2,\n        \"page\": page,\n        \"security_key\": JSON.parse(decodeURIComponent(cookie.getKey(\"https://www.lightnovel.us/\",\"token\"))).security_key\n    }\n}\noption={\"method\":\"POST\",\"body\":JSON.stringify(body)};\noption.headers={ \"Content-Type\": \"application/json; charset=UTF-8\" };\njava.put('url',String(url+','+JSON.stringify(option)))",
+    "searchUrl": "@js:\nurl='https://www.lightnovel.fun/proxy/api/search/search-result';\nbody = {\n    \"is_encrypted\": 0,\n    \"platform\": \"pc\",\n    \"client\": \"web\",\n    \"sign\": \"\",\n    \"gz\": 0,\n    \"d\": {\n        \"q\": \"{{key}}\",\n        \"type\": 2,\n        \"page\": page,\n        \"security_key\": JSON.parse(decodeURIComponent(cookie.getKey(\"https://www.lightnovel.fun/\",\"token\"))).security_key\n    }\n}\noption={\"method\":\"POST\",\"body\":JSON.stringify(body)};\noption.headers={ \"Content-Type\": \"application/json; charset=UTF-8\" };\njava.put('url',String(url+','+JSON.stringify(option)))",
     "weight": 0
   }
 ]
