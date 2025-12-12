@@ -272,7 +272,7 @@ https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/zaimanhua.json
 ## 仓库地址
 
 - Github：https://github.com/jiwangyihao/source-j-legado
-- AtomGit：https://atomgit.com/jiwangyihao/source-j-legado
+- AtomGit：https://atomgit.com/Lordly-Tech/source-j-legado
 
 ## ✨ Stargazers over time
 
