@@ -1,5 +1,7 @@
 # 吉的书源集
 
+![GitHub stars](https://img.shields.io/github/stars/jiwangyihao/source-j-legado?style=social)
+![AtomGit G-Star stars](https://atomgit.com/Lordly-Tech/source-j-legado/star/badge.svg)
 ![GitHub License](https://img.shields.io/github/license/jiwangyihao/source-j-legado)
 [![](https://data.jsdelivr.com/v1/package/gh/jiwangyihao/source-j-legado/badge?style=rounded)](https://www.jsdelivr.com/package/gh/jiwangyihao/source-j-legado)
 
