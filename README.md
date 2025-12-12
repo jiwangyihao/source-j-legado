@@ -269,6 +269,11 @@ https://fastly.jsdelivr.net/gh/jiwangyihao/source-j-legado@main/zaimanhua.json
 
 随手摸的，发现没做
 
+## 仓库地址
+
+- Github：https://github.com/jiwangyihao/source-j-legado
+- AtomGit：https://atomgit.com/jiwangyihao/source-j-legado
+
 ## ✨ Stargazers over time
 
 感谢大家的支持！
