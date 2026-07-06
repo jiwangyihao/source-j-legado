@@ -5,21 +5,20 @@
     "bookSourceName": "真白萌",
     "bookSourceType": 0,
     "bookSourceUrl": "https://masiro.me",
-    "bookUrlPattern": "",
-    "customOrder": 6,
+    "customButton": false,
+    "customOrder": 253,
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
+    "eventListener": false,
     "exploreUrl": "@js:\nresult=[\n  {'title':'>> 论坛首页 <<','url':'','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n  {'title':'全部','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&status=1&order=2','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'日轻','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&order=2&ori=0','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'原创','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&order=2&ori=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'最近更新','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&order=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n  {'title':'收藏','url':'https://masiro.me/admin/loadMoreNovels?page={{page}}&collection=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}}\n]\nhtml=org.jsoup.Jsoup.parse(java.ajax('https://masiro.me/admin/novels'))\ntagLines=html.select('.nv-tags-box>.tag-line, #tagcks>.tag-line')\ntagLines.forEach(tagLine => {\n  result.push({\n    'title': '>> ' + tagLine.select('.line-tit').text() + ' <<',\n    'url':'',\n    'style':{\n      layout_flexGrow:1,\n      layout_flexBasisPercent:1\n    }\n  })\n  tagLine.select('.ck.tgs').forEach(tag => {\n    result.push({\n      'title':tag.text(),\n      'url':`/admin/loadMoreNovels?page={{page}}&tags=${tag.select('.tag-ck').attr('value')}&order=2`,\n      'style':{\n        layout_flexGrow:2,\n        layout_flexBasisPercent:0.25\n      \t}\n    })\n  })\n})\nJSON.stringify(result)",
     "header": "{\n\"Referer\":\"https://masiro.me/\",\n\"User-Agent\":\"\"\n}",
-    "jsLib": "",
-    "lastUpdateTime": 1718621919484,
+    "lastUpdateTime": 1783347570050,
     "loginUrl": "/admin/auth/login",
     "respondTime": 180000,
     "ruleBookInfo": {
       "author": "class.author@tag.a@text",
       "canReName": "true",
-      "coverUrl": "",
       "init": "@js:\nif (java.getString('class.content@text') == '小孩子不能看') {\n  java.toast(\"等级不足\")\n  time = new Date().getTime()\n  while(new Date().getTime() - time<2000){}\n  throw('等级不足')\n} else\n  src",
       "intro": "-\n更新时间：{{@@.n-update@class.s-font@text}}\n标签：{{@@.tags@tag.a@text##\\s## - }}\n{{@@.brief@html##简介：}}",
       "kind": "{{@@.n-chapters@text##字数 : .+字}}\n{{@@.n-status@text##状态 : }}\n{{@@.n-translator@text}}\n{{@@.tags@tag.a@text}}",
@@ -28,21 +27,12 @@
       "wordCount": "class.n-chapters@text##字数 : |共.+话|字"
     },
     "ruleContent": {
-      "content": "@js:\nif (`{{@@.pay@text}}` == '立即打钱')\n  `<img src=\"/images/打钱.png\" alt=\"打钱.png\">\n  立即打钱\n  Cost：{{@@.cost@value}} 金币`\nelse\n  `{{@@.nvl-content@html}}`",
+      "content": "<js>\nif (`{{@@.pay@text}}` == '立即打钱')\n    `<img src=\"/images/打钱.png\" alt=\"打钱.png\">\n  立即打钱\n  Cost：{{@@.cost@value}} 金币`\nelse String(java.getElement('.nvl-content').html()).replace(/>\\s*?&nbsp;\\s*?</g, '>ㅤ<').trim();\n</js>\nhtml",
       "imageStyle": "FULL",
       "payAction": "java.setContent(java.ajax(source.bookSourceUrl + baseUrl))\nlet body = `type=${java.getString('class.type@value')}&object_id=${java.getString('class.object_id@value')}&cost=${java.getString('class.cost@value')}`\nlet url = source.bookSourceUrl + '/admin/pay'\nlet res = java.post(url, body, {\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\n  \"Referer\": baseUrl,\n  \"X-Csrf-Token\": java.getString(\"class.csrf@value\"),\n  \"X-Requested-With\": \"XMLHttpRequest\"\n})\njava.toast(JSON.parse(res.body()).msg)",
-      "replaceRegex": ""
+      "replaceRegex": "@js:result.replace(/(?:\\nㅤ){2,}/g, '\\nㅤ').replace(/(^ㅤ\\n|\\nㅤ$)/, '');"
     },
-    "ruleExplore": {
-      "author": "",
-      "bookList": "",
-      "bookUrl": "",
-      "intro": "",
-      "kind": "",
-      "lastChapter": "",
-      "name": "",
-      "wordCount": ""
-    },
+    "ruleExplore": {},
     "ruleSearch": {
       "author": "$.author",
       "bookList": "$.novels",
